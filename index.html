@@ -1,28 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>elSmarter</title>
+    <style>
+        .error {color: maroon}
+
+    </style>
+
 </head>
 <body bgcolor="#fffacd">
     <h1>Розумна електрика</h1>
-    <h2>Розумга електрика</h2>
-    <h3>Розумна електрика</h3>
-    <h4>Розумга електрика</h4>
-    <h5>Розумна електрика</h5>
-    <h6>Розумга електрика</h6>
+    <h2> <span class="error"> Сімейний Електрик</span></h2>
     <p>Я завжди поруч з інженерними та IT-системами ваших квартир та домівок <br>
         протягом тижня всього їхнього життя. На жаль, деякі з моїх колег по <br>
         професії назавжди розчиняються у просторі одразу після розрахугку, <br>
         незалишивши по собі нічого: ні технічної документації,ні інструкції <br>
-        з експлуатації, ні, головне, бажання спілкуватися знов.
+        з експлуатації, ні, головне, бажання спілкуватися знов.</p>
+
     <p>Я зацікавлений у високій якості своєї роботи! <br>
         Оскільки несу власну відповідальність за неї. <br>
-        <b>Я поруч, а не десь у просторі Всесвіту та часу.</b></p>
-    <img src="image/box1.jpg" width="300" alt="Щит" title="щиток"/>
+        <a href="https://www.facebook.com/f.electrician" target="_blank"><strong><span class="error">Я поруч, а не десь у просторі Всесвіту та часу.</span></strong></a></p>
+
+    <img src="image/elektryka.jpg" width="500" alt="Електрика" title="сімейний електрик"/>
     <h2>До ваших послуг:</h2>
     <ol>
         <li>електромонтаж будь-якої складності</li>
@@ -82,7 +85,7 @@
         </div>
         <div>
             <label>телефон</label>
-            <input type="text" name="telephone">
+            <input required type="text" name="telephone">
         <br>
             <button type="submit">відправити</button>
     </div>
@@ -95,6 +98,7 @@
             <input type="checkbox" name="option5" value="a5">linux<br>
             <input type="checkbox" name="option6" value="a6">X3-DOS<br>
         </div>
+
         <h2>OS</h2>
         <div>
             <input type="checkbox" name="option1" value="a1" id="a1">
@@ -115,6 +119,7 @@
             <input type="checkbox" name="option6" value="a6" id="a6">
             <label for="a6">X3-DOS</label><br>
         </div>
+
         <h2>оберіть найзручніший спосіб комунікації</h2>
         <div>
             <input type="radio" id="contactChoice1"
@@ -140,6 +145,22 @@
             <input type="radio" id="contactChoice3" name="contact" value="adress">
             <label for="contactChoice1">adress</label>
         </div>
+        <fieldset>
+           <legend>Особое поле</legend>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+        </fieldset>
+
+        <div>
+            <select>
+                <option>Один</option>
+                <option selected>Два</option>
+                <option>Три</option>
+            </select>
+        </div>
+
     </form>
 </body>
 </html>
